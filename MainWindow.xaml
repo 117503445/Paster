@@ -1,0 +1,17 @@
+﻿<Window x:Class="Paster.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Paster"
+        mc:Ignorable="d"
+        Title="Paster " Height="450" Width="800" Topmost="True">
+    <Grid>
+        <TextBlock Margin="50,20">使用方法:在下列文本框中输入要复制的字符串,然后点击按钮,迅速把光标移到要进行粘贴的地方,好像不能进行中英文混合输入</TextBlock>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Bottom" Margin="50,20,20,20">
+            Paster 是一款模拟键盘输入以规避禁止粘贴的软件 作者 <Hyperlink Name="HlAuthor" NavigateUri="https://github.com/117503445" Click="HlAuthor_Click">117503445</Hyperlink> 项目 <Hyperlink Name="HlProject" NavigateUri="https://github.com/117503445/Paster" Click="HlProject_Click">Paster</Hyperlink>
+        </TextBlock>
+        <TextBox x:Name="TbInput" TextWrapping="Wrap" Margin="50" AcceptsReturn="True" Text="123 456&#13;789"> </TextBox>
+        <Button x:Name="BtnStart" Width="100" Height="20" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="15,15,50,15" Click="BtnStart_Click">点击后3s开始</Button>
+    </Grid>
+</Window>

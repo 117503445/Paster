@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paster", "Paster.csproj", "{AFC226DF-A9C7-4AC7-807E-6D4C8FCA5FF8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFC226DF-A9C7-4AC7-807E-6D4C8FCA5FF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFC226DF-A9C7-4AC7-807E-6D4C8FCA5FF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFC226DF-A9C7-4AC7-807E-6D4C8FCA5FF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFC226DF-A9C7-4AC7-807E-6D4C8FCA5FF8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {91297BB3-69BC-4DB1-8DC9-F849F01DB9F6}
+	EndGlobalSection
+EndGlobal
