@@ -49,7 +49,23 @@ namespace Paster
                 var s = TbInput.Text;
                 s = s.Replace(Environment.NewLine, "\n");
                 //Console.WriteLine(s);
+
+                string[] listSpecialkey = { "+", "^", "%", "~","(",")" };// https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.sendkeys?redirectedfrom=MSDN&view=net-5.0
+
+                s = s.Replace("{", "亓");
+                s = s.Replace("}", "捸");
+                s = s.Replace("亓", "{{}");
+                s = s.Replace("捸", "{}}");
+
+                foreach (var key in listSpecialkey)
+                {
+                    s = s.Replace(key, "{" + key + "}");
+                }
+
+
+                Console.WriteLine(s);
                 SendKeys.SendWait(s);
+
 
                 Dispatcher.Invoke(() =>
                 {
@@ -66,7 +82,6 @@ namespace Paster
             int seconds = 3;
             timer.Tag = seconds;
             timer.Start();
-            Console.WriteLine(timer.IsEnabled);
         }
 
         private void HlProject_Click(object sender, RoutedEventArgs e)
